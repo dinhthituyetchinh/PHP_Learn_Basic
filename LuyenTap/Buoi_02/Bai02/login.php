@@ -1,3 +1,22 @@
+<?php
+
+      $err = "";
+      if($_SERVER['REQUEST_METHOD'] == 'POST')
+      {
+        $username = $_POST['user'];
+        $password = $_POST['pass'];
+        if($username == "" || $password == "")
+        {
+          $err = "You must input data";
+        }
+        else
+        {
+          header('Location: index.php');
+        }
+      }    
+      ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,11 +53,30 @@
     </div>
   </div>
 </nav>
-    </div>
-    <div>
+    </div >
+    <div class = "d-flex">
         <div style = "width: 70%;">
-        
+        <form action="" method="POST">
+  <div class="mb-3">
+    <label for="exampleInputUsername" class="form-label">UseName</label>
+    <input type="text" class="form-control" id="exampleInputUsername" name = "user">   
+      <p class="text-danger"><?php echo $err;?></p>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" name="pass">
+    <p class="text-danger"><?php echo $err;?></p>
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary" name = "submit">Submit</button>
+ 
+</form>
+
       </div>
+
         <div style = "width: 30%;">
         <div class="list-group">
             <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
