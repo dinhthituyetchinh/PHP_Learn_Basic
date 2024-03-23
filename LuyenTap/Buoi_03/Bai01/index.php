@@ -37,6 +37,7 @@
     </div> -->
     <?php
     include "./inc/header.php";
+    include "./productList.php";
     include "./inc/footer.php";
     ?>
     <!-- <table class="table">
@@ -44,7 +45,7 @@
         <th>Tên sản phẩm</th>
         <th>Giá</th>
         <th>Ảnh</th>
-        <?php
+      <?php
     //    foreach($data as $item)
     //    {
     //     ?>
