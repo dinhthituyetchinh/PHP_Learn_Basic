@@ -1,0 +1,87 @@
+.clr
+{
+    clear: both;
+}
+
+.content
+{
+    margin: 20px auto;
+    width: 500px;
+    border: 1px solid #999;
+    padding: 10px;
+}
+
+.content div.info img{
+    float: left;
+    margin-right: 20px;
+
+}
+
+.content div.info h1{
+    color: red;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.content div.info form p{
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.content div.info input[type = text]
+{
+    width: 244px;
+    height: 25px;
+}
+
+.content div.info input[type = submit]
+{
+    padding: 5px 14px;
+}
+
+.content div.result
+{
+    margin-top: 10px;
+}
+
+.content div.result div.normal
+{
+    margin-top: 6px;
+}
+
+.content div.result div.normal p{
+    float: left;
+}
+
+.content div.result div.normal:first-child
+{
+    font-weight: bold;
+}
+
+.content div.result div.normal p.col1
+{
+    width: 50%;
+}
+
+.content div.result div.normal p.col2
+{
+    width: 25%;
+    text-align: center;
+}
+
+.content div.result div.normal p.col3
+{
+    width: 25%;
+    text-align: right;
+}
+
+.content div.result P.total
+{
+    border-top: 1px solid #DDDDFF;
+    margin-top: 10px;
+    padding-top: 10px;
+    text-align: right;
+    color: blue;
+    font-weight: bold;
+}

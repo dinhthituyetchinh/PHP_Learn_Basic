@@ -1,0 +1,39 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+.content 
+{
+    margin: 20px auto;
+    width: 300px;
+    border: 1px solid #999;
+    padding: 10px;
+}
+
+.content h1{
+    color: red;
+    text-align: center;
+}
+
+.content div.image{
+    margin: 20px 0px;
+    text-align: center;
+}
+
+.content div.image img{
+    margin: 10px 0px;
+}
+
+.content div.image a{
+    display: inline-block;
+    background-color: #686f97;
+    padding: 3px 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.content div.image a:hover{
+    color: #f6f312;
+}
