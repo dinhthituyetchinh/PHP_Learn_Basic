@@ -1,0 +1,82 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<DSHD>
+	<HoaDon>
+		<Loai>1</Loai>//Hoá đơn khách VIP
+		<MS>HD078</MS>
+		<Khach>Lê Chí Bảo</Khach>
+		<NgayLap>23/5/2023</NgayLap>
+		<Hang>
+			<MH>A92</MH>
+			<TenHang>Xăng 92</TenHang>
+			<Gia>15500</Gia>
+			<Hinh>1.jpg</Hinh>
+		</Hang>
+		<SoLuong>20</SoLuong>
+	</HoaDon>
+	<HoaDon>
+		<Loai>2</Loai>//Hoá đơn khách vãng lai
+		<MS>HD111</MS>
+		<Khach>Trần Văn Công</Khach>
+		<NgayLap>10/5/2023</NgayLap>
+		<Hang>
+			<MH>A92</MH>
+			<TenHang>Xăng 92</TenHang>
+			<Gia>15500</Gia>
+			<Hinh>2.jpg</Hinh>
+		</Hang>
+		<SoLuong>10</SoLuong>
+	</HoaDon>
+	<HoaDon>
+		<Loai>3</Loai>//Hoá đơn khách thân thiết
+		<MS>HD119</MS>
+		<Khach>Nguyễn Long</Khach>
+		<NgayLap>20/5/2023</NgayLap>
+		<Hang>
+			<MH>A95</MH>
+			<TenHang>Xăng 95</TenHang>
+			<Gia>16500</Gia>
+			<Hinh>3.jpg</Hinh>
+		</Hang>
+		<SoLuong>50</SoLuong>
+	</HoaDon>
+	<HoaDon>
+		<Loai>2</Loai>//Hoá đơn khách vãng lai
+		<MS>HD074</MS>
+		<Khach>Lê Ngọc</Khach>
+		<NgayLap>22/5/2023</NgayLap>
+		<Hang>
+			<MH>A92</MH>
+			<TenHang>Xăng 92</TenHang>
+			<Gia>15500</Gia>
+			<Hinh>4.jpg</Hinh>
+		</Hang>
+		<SoLuong>70</SoLuong>
+	</HoaDon>
+	<HoaDon>
+		<Loai>1</Loai>//Hoá đơn khách VIP
+		<MS>HD079</MS>
+		<Khach>Phạm Thu Thuỷ</Khach>
+		<NgayLap>1/5/2023</NgayLap>
+		<Hang>
+			<MH>A92</MH>
+			<TenHang>Xăng 92</TenHang>
+			<Gia>15500</Gia>
+			<Hinh>5.jpg</Hinh>
+		</Hang>
+		<SoLuong>100</SoLuong>
+	</HoaDon>
+	<HoaDon>
+		<Loai>3</Loai>//Hoá đơn khách thân thiết
+		<MS>HD088</MS>
+		<Khach>Phạm Thanh Hùng</Khach>
+		<NgayLap>5/5/2023</NgayLap>
+		<Hang>
+			<MH>A95</MH>
+			<TenHang>Xăng 95</TenHang>
+			<Gia>16500</Gia>
+			<Hinh>6.jpg</Hinh>
+		</Hang>
+		<SoLuong>80</SoLuong>
+	</HoaDon>
+</DSHD>
