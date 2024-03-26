@@ -44,13 +44,16 @@ abstract class HoaDon
     public function setSoLuong($soLuong) {
         $this->soLuong = $soLuong;
     }
-    public function __construct($id, $fullname, $day, $totalMoney)
+    public function __construct($maSo, $hoTenKhach, $ngayLap, $mh, $soLuong)
     {
-        $this->maSo = $id;
-        $this->hoTen = $fullname;
-        $this->ngayLap = $day;
-        $this->tongTT = $totalMoney;
+        $this->maSo = $maSo;
+        $this->hoTen = $hoTenKhach;
+        $this->ngayLap = $ngayLap;
+        $this->mh = $mh; // Khởi tạo thuộc tính mh
+        $this->soLuong = $soLuong;
     }
+   
+    
     public function thanhTien() {
         return $this->soLuong * $this->getMatHang()->getDonGia(); // or  $this->mh()->getDonGia();
     }
