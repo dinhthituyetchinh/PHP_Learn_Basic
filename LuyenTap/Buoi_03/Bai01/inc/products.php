@@ -3,7 +3,7 @@
     {
         $row = 1;
         $productList = [];
-    if (($handle = fopen($filename, "r")) !== FALSE) {
+        if (($handle = fopen($filename, "r")) !== FALSE) {
         while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
             $num = count($data);
             $productList[] = $data;

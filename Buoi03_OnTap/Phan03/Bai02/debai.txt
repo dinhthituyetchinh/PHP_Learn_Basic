@@ -1,0 +1,16 @@
+Thiết kế chương trình quản lý nhân sự tiền lương cho Cty Mỹ Phẩm Thiên Thanh với các mô 
+tả sau :
+- Cty có 2 loại nhân viên : Nhân viên chính thức và nhân viên bán thời gian.
+- Tối đa có 50 nhân viên ( chính thức tối đa 35 nhân viên, bán thời gian tối đa 15 nhân viên).
+- Mỗi nhân viên cần quản lý các thông tin sau : Manv,Hoten,Diachi,sodienthoai.
+- Lương cơ bản cho nhân viên chính thức là 8,000,000, nhân viên bán thời gian mỗi giờ làm 
+được tính là 25,000.
+- Thực lãnh=Luongcoban + Hoa hồng theo doanh số + Hoa hồng vượt trội:
++ Nếu doanh số >500 thì Hoahong = ((doanh số-500)/10)*5000, ngược lại Hoahong=0.
++ Nếu tổng số giờ >208 thì Hoahong=(tổng số giờ -208)*50000, ngược lại Hoahong=0.
+Yêu cầu:
+- Viết chương trình nhập thông tin cho các nhân viên.
+- Nhập doanh số bán hàng và số giờ làm việc của các nhân viên trong một tháng
+- Tính Hoa hồng cho từng nhân viên.
+- Tính Thực lãnh cho từng nhân viên.
+- In ra thông tin thực lãnh cho từng nhân viên : Manv,hoten,thuclanh

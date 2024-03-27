@@ -8,16 +8,16 @@
 .content
 {
     margin: 20px auto;
-    width: 600px;
+    width: 700px;
     border: 1px solid #999;
-    background-color: rgb(31, 182, 182);
+    background-color: rgb(235, 210, 147);
 }
 
 .content h1{
     text-transform: uppercase;
-    color: #fff;
+    color: #bc7c15;
     text-align: center;
-    background-color: rgb(18, 112, 112);
+    background-color: rgb(223, 180, 107);
 }
 
 .content div.dong{
@@ -40,5 +40,15 @@ margin-top: 20px;
 .content div.dong input
 {
     width: 50%;
+    height: 25px;
+}
+
+
+.content div.btn_sub input
+{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-left: 50%;
+    width: 20%;
     height: 25px;
 }
