@@ -1,9 +1,8 @@
 <?php
 
-include "./header.php";
 include "./Article.php";
+include "./header.php";
 
-session_start();
 if(!isset($_SESSION["data"]))
 {
     $obj = new Article();

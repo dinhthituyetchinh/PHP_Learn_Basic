@@ -1,4 +1,5 @@
 <?php
+include "./header.php";
 include "./Article.php";
 
 function getID($id)
@@ -18,6 +19,12 @@ if(isset($_GET['id']))
 {
    $item = getID($_GET['id']);
 }
+
+if(isset($_POST["cmt"]))
+{
+    $_SESSION["comment"] = $_POST["cmt"];
+
+}
 ?>
 
 <!DOCTYPE html>
@@ -30,15 +37,21 @@ if(isset($_GET['id']))
 <body>
     <h1><?php echo $item->title?></h1>
     <p><?php echo $item->content?></p>
+    <b>Comments</b> 
+    <p> <?php if(isset($_SESSION["comment"]))  echo $_SESSION["comment"];
+       // header("location: ./articleShow");
+    ?></p>
     <?php
-    if(isset($_POST["username"]) && isset($_POST["password"]))
+    if(isset($_SESSION["username"]))
     {
         ?>
-            <div class="form-floating">
-            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+           <form method="post" action="">
+           <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" name="cmt"></textarea>
             <label for="floatingTextarea2">Comments</label>
-            <button type="button" class="btn btn-primary">Primary</button>
+            <button type="submit" class="btn btn-primary" style="margin-top: 15px;">Submit Comment</button>
             </div>
+           </form>
         <?php
     }
     

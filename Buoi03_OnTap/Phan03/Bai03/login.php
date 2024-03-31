@@ -7,6 +7,7 @@ if(isset($_POST["username"]) && isset($_POST["password"]))
     $pass = $_POST["password"];
     if(($user == "user1"|| $user == "user2") && $pass == "pass1234")
     {
+      $_SESSION["username"] = $user;
         header("location: ./index.php");
     }
 }
