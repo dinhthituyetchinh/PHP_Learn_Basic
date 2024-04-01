@@ -6,7 +6,7 @@ if(!isset($_POST["year"]))
 else if(!is_numeric($_POST["year"]))
 {
     $inputYear = "Nhập năm phải là số";
-}else if(isset($_POST["year"]) < 1975)
+}else if(($_POST["year"] * 1) < 1975)
 {
     $inputYear = "Nhập năm phải lớn hơn hoăc bằng 1975";
 }
@@ -15,11 +15,11 @@ else{
     {
         if($_POST["year"] % 4 == 0)
         {
-            $prize = "Olympic";
-            $prize += "Bóng đá châu Âu";
+            $prize = "Olympic ";
+            $prize .= "Bóng đá châu Âu ";
             if($_POST["year"] >= 1996)
             {
-                $prize += "Tiger Cup";
+                $prize .= "Tiger Cup ";
             }
         }
         if($_POST["year"] % 4 == 1 || $_POST["year"] == 3)
@@ -31,7 +31,7 @@ else{
             $prize = "World Cup" ;
             if($_POST["year"] >= 1996)
             {
-                $prize += "Tiger Cup";
+                $prize .= "Tiger Cup";
             }
         }
     }
@@ -59,19 +59,12 @@ else{
                     echo $_POST["year"];
                 }
                 ?>"/>
-                <p style="color: red;"><?php echo $inputYear ?></p>
+                <p style="color: red;"><?php echo $inputYear?? "" ?></p>
             </div>
             <div class="dong">
                 <span>Giải thể thao:</span>
                 <input type ="text" value="<?php
-                if(!isset($_POST["year"])) 
-                { 
-                    $prize = " ";
-                    echo $prize;
-                }
-                else{
-                    echo $prize;
-                }
+                    echo $prize ?? "";
                 ?>"/>    
                 
             </div>
