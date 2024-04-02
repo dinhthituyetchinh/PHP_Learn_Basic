@@ -1,4 +1,5 @@
 <?php
+ session_start();
 if(isset($_POST["user"]) && isset($_POST["pass"]))
 {
     $userName = $_POST["user"];
@@ -6,8 +7,9 @@ if(isset($_POST["user"]) && isset($_POST["pass"]))
 
     if($userName == "admin" && $passWord == "2001215640")
     {
-        $_SESSION["username"] = $user;
-        session_start();
+       
+        $_SESSION["username"] = $userName;
+       
 
         header("Location: ./admin/index.php");
     }

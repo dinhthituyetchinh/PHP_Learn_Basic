@@ -1,9 +1,8 @@
 <?php
-    if(isset($_SESSION["username"]))
+session_start();
+    if(!isset($_SESSION["username"]))
     {
-        ?>
-            <h3><?php echo $_SESSION["username"]?></h3>
-        <?php
+        header("Location: ../login.php");
     }
 ?>
 
