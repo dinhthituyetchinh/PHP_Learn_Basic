@@ -15,7 +15,7 @@
 // echo "<br />";
 
 // echo "4:".strtolower($name);
-if(isset($_POST["masv40"]) && isset($_POST["hoTen40"]))
+if(isset($_POST["masv40"]) && isset($_POST["hoTen40"]) && $_POST["gioiTinh40"])
 {
     $maSV = $_POST["masv40"];
     $hoTen = $_POST["hoTen40"];
@@ -35,7 +35,7 @@ if(isset($_POST["masv40"]) && isset($_POST["hoTen40"]))
 </head>
 <body>
     <form action="" method="post" enctype="multipart/form-data" >
-    Mã sinh viên<input type="text" name = "masv40" /> <br />
+    Mã sinh viên<input type="text" name = "masv40" onBlur="validateMSSV()"/> <br />
     Họ tên <input type="text" name = "hoten40" /> <br />
     Giới tính<input type="radio" name="gioiTinh40" value="" checked/> Nam
     <input type="radio" name="gioiTinh40" value="" /> Nữ<br />
@@ -70,3 +70,16 @@ if(isset($_POST["masv40"]) && isset($_POST["hoTen40"]))
     ?>
 </body>
 </html>
+
+
+
+<script>
+    function validateMSSV() {
+        var masvInput = document.getElementById("mssv").value;
+        var regex = /^SV\d{3}$/;
+        if (!regex.test(masvInput)) {
+            alert("Mã Sinh Viên không hợp lệ! Vui lòng nhập lại theo định dạng SVxxx (VD: SV522).");
+            document.getElementById("mssv").focus();
+        }
+    }
+</script>
