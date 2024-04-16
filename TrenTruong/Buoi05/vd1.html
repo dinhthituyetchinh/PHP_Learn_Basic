@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="POST" enctype="multipart/form-data">
+        <label for="">Username</label>
+        <input type="text" name="username" placeholder="Username">
+        <br>
+    
+        <label for="">Password</label>
+        <input type="password" name="password" placeholder="Password">
+    
+        <br>
+    
+        <label for="">Avatar</label>
+        <input type="file" name="avatar" onchange="preview()" />
+        <img id="thumb" src="" width="150px" />
+        <br>
+    
+    
+    
+        <button type="submit">Register</button>
+    </form>
+</body>
+
+<script>
+    function preview() {
+        thumb.src = URL.createObjectURL(event.target.files[0]);
+    }
+</script>
+</html>
